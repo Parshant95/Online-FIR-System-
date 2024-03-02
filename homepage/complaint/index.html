@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="govt-of-india">
+        <div class="logo">
+          <img src="emblem.jpg" class="emblem">
+          <p class="logo-text"><b>Government of India</b></p>
+        </div>
+      
+        <div class="fir-portal">
+          <p><b>Online FIR Portal across India</b></p>
+        </div>
+        <div class="datetime-bar">
+          <span id="datetime"></span>
+        </div>
+    </div>
+
+    <div class="progress-list">
+    <div class="container">
+        <h1><b><u>Complaint Registration</b></u></h1>
+        <form id="complaintForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </form>
+ 
+    <form id="complaintForm1">
+        <label for="country">Country:</label>
+        <select id="country" name="country" onchange="loadStates()">
+            <option value="">Select Country</option>
+        </select>
+
+        <label for="state">State:</label>
+        <select id="state" name="state" onchange="loadDistricts()" disabled>
+            <option value="">Select State</option>
+        </select>
+
+        <label for="district">District:</label>
+        <select id="district" name="district" disabled>
+            <option value="">Select District</option>
+        </select>
+
+        <label for="nearbypolicestation">NearBy_Police Station:</label>
+        <select id="nearbypolicestation" name="nearbypolicestation" disabled>
+            <option value="">Select NearBy_Police Station</option>
+        </select>
+
+        <div class="dob">Case Type:</div>
+                <div id="date">
+                    <!-- day -->
+                    <select name="day" id="day">
+                        <option value="Select Category">Select Category</option>
+                        <option value="Murder Case">Murder Case</option>
+                        <option value="Rape Case">Sexual Crime</option>
+                        <option value="Thieft Case">Thieft Case</option>
+                        <option value="Lost Case">Lost Case</option>
+                        <option value="Marriage Case">Domestic Violence</option>
+                        <option value="Property Case">Property Case</option>
+                        <option value="Child Abuse">Child Case</option>
+                        <option value="Labour Case">Labour Case</option>
+                        <option value="Farmer Case">Farmer Case</option>
+                        <option value="Drug Case">Drug Case</option>
+                        <option value="Cyber Case">Cyber Crime</option>
+</div>
+
+        <label for="complaint">Complaint:</label>
+        <textarea id="complaint" name="complaint" required></textarea>
+
+        <a href="..ALLcombine/homepage/progress/progres.html"><button type="button" onclick="submitComplaint()">Submit Complaint</button></a>
+    </form>
+</div>
+</div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Contact Us</h2>
+                <p class="contact-info">Email: support@firportal.com<br>Phone: +1 (123) 456-7890</p>
+            </div>
+
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">File FIR</a>
+                    <a href="#">Track FIR</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h2>Follow Us</h2>
+                <div class="footer-links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; 2024 Online FIR Portal. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
