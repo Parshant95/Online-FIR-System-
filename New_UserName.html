@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Account</title>
+    <link rel="stylesheet" href="Newuser.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="govt-of-india">
+        <div class="logo">
+          <img src="image/Emblem_of_India_(gold).svg" class="emblem">
+          <p class="logo-text">Government of India</p>
+        </div>
+      
+        <div class="datetime-bar">
+          <span id="datetime"></span>
+        </div>
+      </div>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Online FIR Portal</h1>
+        </div>
+    </nav>
+    <div class="box">
+        <div class="header">
+            Create Account with Ease !
+        </div>
+        <input type="text" class="input-box" id="FullName" placeholder="Full Name*">
+        <div>
+            <div class="dob">Date of Birth*</div>
+                <div id="date">
+                    <!-- day -->
+                    <select name="day" id="day">
+                        <option value="">Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <!-- month -->
+                    <select name="month" id="month">
+                        <option value="">Month</option>
+                        <!-- Populate months from January to December -->
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <!-- Add more options here -->
+                        <option value="12">December</option>
+                    </select>
+                    <select name="year" id="year">
+                        <option value="">Year</option>
+                        <option value="1990">1990</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                    </select>
+                </div>
+        </div>
+        <div>
+            <div class="aadhar">Aadhar Number*</div>
+            <input type="text" class="input-box" id="FullName" placeholder="Aadhar Number*">
+        </div>
+        <div class="gender">
+            Gender*
+            <div class="genderSelect">
+                <label>
+                    <input type="radio" name="gender" id="gender1" required>
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender2" required>
+                    Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender3" required>
+                    Other
+                </label>
+            </div>
+        </div>
+        <div class="details">
+            <input type="tel" id="mobile" maxlength="10" class="input-box" minlength="10" placeholder="Mobile Number*" pattern="[0-9]*" inputmode="numeric" required>
+        </div>
+        <div class="details">
+            <input type="email" class="input-box" id="email_id" placeholder="Email ID">
+        </div>
+        <div class="details">
+            <input type="text" class="input-box" id="password_id" placeholder="Set 6 digit security PIN*" inputmode="numeric" pattern="[0-9]*" minlength="6" maxlength="6" style="appearance: textfield;">
+        </div>
+        <a href="index.html"><button class="submit">SUBMIT</button></a>
+        <div class="sign-in">Already have an account? <span style="color: blue ; cursor: pointer"; >Sign In</span></div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
