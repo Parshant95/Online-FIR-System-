@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.govt-of-india {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #fff;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0059b3;
+  }
+  .govt-of-india .logo {
+    display: flex;
+  }
+  .govt-of-india .emblem {
+    height: 45px;
+    max-width: 40px;
+    padding: 1.5px;
+  }
+  .govt-of-india .logo-text {
+    font-size: 11px;
+    font-weight: 250;
+    text-align: center;
+    color:#fff;
+    padding-top: 7px;
+  }
+  .govt-of-india .fir-portal {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-right: 0.5rem;
+    color: #fff;
+  }
+  .datetime-bar span {
+    font-size: 12px;
+    font-weight: 450;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-right: 0.5rem;
+    color: #fff;
+  }
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: lightgray;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(212, 28, 28, 0.3);
+}
+
+.container h1{
+    text-align: center;
+}
+
+.progress-list {
+    content: '';
+    display: block;
+	margin-right: 5rem;
+    background-color: rgb(100, 165, 198); /* Example color */
+    padding: 0.2rem; /* Adjust padding */
+    margin-top: 2rem; /* Adjust margin */
+    border-radius: 1rem;
+
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(62, 120, 28, 0.3);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Your existing styles for the header/navbar */
+
+main {
+    flex: 1; /* Make the main content area grow to fill remaining space */
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    color: #4CAF50;
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #4CAF50;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+}
+

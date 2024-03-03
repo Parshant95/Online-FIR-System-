@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login and SignUp Page</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body{
+      background-image: url(img/bg.jpeg);
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="govt-of-india">
+  <div class="logo">
+    <img src="img/Emblem_of_India.svg" class="emblem">
+    <p class="logo-text">Government of India</p>
+  </div>
+
+  <div class="fir-portal">
+    <p>Online FIR portal</p>
+  </div>
+  <div class="datetime-bar">
+    <span id="datetime"></span>
+  </div>
+  
+</div>
+
+<div class="container">
+
+<div class="wrapper">
+  <div class="title-text">
+    <div class="title login">Login Form</div>
+    <div class="title signup">Signup Form</div>
+  </div>
+  <div class="form-container">
+    <div class="slide-controls">
+      <input type="radio" name="slide" id="login" checked>
+      <input type="radio" name="slide" id="signup">
+      <label for="login" class="slide login">Aadhar Login</label>
+      <label for="signup" class="slide signup">Signup</label>
+      <div class="slider-tab"></div>
+    </div>
+    <div class="form-inner">
+      <form action="homepage/homepage.html" class="login">
+        <div class="field">
+          <input type="text" id="aadharNumber" placeholder="Aadhar Card Number" required>
+        </div>
+        <div class="field">
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <div class="pass-link"><a href="#">Forgot password?</a></div>
+        
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Login">
+        </div>
+
+        <div class="signup-link">Not a member? <a href="New_UserName.html">Signup now</a></div>
+      </form>
+      <form action="New_UserName.html" class="signup">
+        <div class="field">
+          <input type="text" id="aadharNumber" placeholder="Aadhar Card Number" required>
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Otp" required>
+        </div>
+        <div class="field">
+          <input type="password" id="password" placeholder="Enter password" required>
+        </div>
+
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Signup">
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+</div>
+  <script  src="./script.js"></script>
+</body>
+</html>

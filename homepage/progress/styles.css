@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.govt-of-india {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #fff;
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0059b3;
+  position: relative;
+  z-index: 1000;
+}
+.govt-of-india .logo {
+  display: flex;
+}
+.govt-of-india .emblem {
+  height: 30px;
+  max-width: 20px;
+  padding: 1.5px;
+}
+.govt-of-india .logo-text {
+  font-size: 11px;
+  font-weight: 250;
+  text-align: center;
+  color:#fff;
+  padding-top: 7px;
+}
+.govt-of-india .fir-portal {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 0.15em;
+  padding-right: 0.5rem;
+  color: #fff;
+}
+.datetime-bar span {
+  font-size: 12px;
+  font-weight: 450;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-right: 0.5rem;
+  color: #fff;
+}
+
+                                            /* **************** sidebar ******************** */
+
+
+  p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+ol {
+    list-style: none;
+    counter-reset: list;
+    padding: 0 2rem;
+    margin-right: 0rem;
+    text-align: left; /* Center-align the list */
+}
+
+
+
+/* Define the pseudo-element to simulate the <div> */
+.progress-list {
+    content: '';
+    display: block;
+    margin-left: 30rem;
+	width: 800px;
+	height: 1400px;
+    position: relative; /* Change position to relative */
+    z-index: 1; /* Increase the z-index to place it above the vertical bar */
+    background-color: rgb(213, 101, 241);
+    padding: 0.2rem; /* Adjust padding */
+    margin-top: 2rem; /* Adjust margin */
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(120, 28, 28, 0.3);
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 2rem;
+    margin-left: 30rem;
+	background-color: whitesmoke;
+    width: 400px;
+    height: 200px;
+}
+
+.profile-box img {
+	position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-info p {
+    margin: 5px 0 0;
+    color: #666;
+}
+/* For the first list item */
+.li-progress:nth-child(1) {
+    --c1: hsl(130, 89%, 52%);
+    --c2: hsl(0, 61%, 88%);
+    --stop: calc(100%);
+}
+
+/* For the second list item */
+.li-progress:nth-child(2) {
+    --c1: hsl(133, 92%, 53%);
+    --c2: hsl(60, 61%, 88%);
+    --stop: calc(100%);
+}
+
+/* For the third list item */
+.li-progress:nth-child(3) {
+    --c1: hsl(125, 84%, 53%);
+    --c2: hsl(120, 61%, 88%);
+    --stop: calc(100%);
+}
+
+/* For the fourth list item */
+.li-progress:nth-child(4) {
+    --c1: hsl(81, 88%, 53%);
+    --c2: hsl(180, 61%, 88%);
+    --stop: calc(50%);
+}
+
+/* For the fifth list item */
+.li-progress:nth-child(5) {
+    --c1: hsl(61, 88%, 47%);
+    --c2: hsl(240, 61%, 88%);
+    --stop: calc(51%);
+}
+.li-progress:nth-child(6) {
+    --c1: hsl(4, 96%, 47%);
+    --c2: hsl(240, 61%, 88%);
+    --stop: calc(11%);
+}
+.li-progress:nth-child(7) {
+    --c1: hsl(4, 96%, 47%);
+    --c2: hsl(240, 61%, 88%);
+    --stop: calc(11%);
+}
+
+.li-progress {
+    --l: 12%;
+    --l2: 88%;
+    --h: calc((var(--i) - 1) * (180 / var(--length)));
+    --c1: var(--c1); /* Assign custom colors */
+    --c2: var(--c2); /* Assign custom colors */
+    --stop: var(--stop); /* Assign custom progress */
+    
+    position: relative;
+    counter-increment: list;
+    max-width: 35rem; /* Decrease the maximum width */
+    margin: 2rem auto; /* Adjust margin to center-align */
+	margin-left: 20rem;
+    padding: 2rem 1rem 1rem; /* Adjust padding */
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+}
+
+.li-progress::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+}
+
+h3 {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 1rem;
+    color: rgb(70 70 70);
+}
+
+h3::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    content: counter(list);
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--c1);
+    color: white;
+}
+
+@media (min-width: 40em) {
+    .li-progress {
+        margin: 2rem auto; /* Adjust margin */
+        padding: 2rem 1.5rem 1.5rem; /* Adjust padding */
+    }
+    
+    h3 {
+        font-size: 2.25rem;
+        margin: 0 0 2rem;
+    }
+    
+    h3::before {
+        margin-right: 1.5rem;
+    }
+}
+
+
+
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: #11101d;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+  padding-top: 2.5rem;
+}
+.sidebar.open {
+  width: 250px;
+}
+.sidebar .logo-details {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar .logo-details .icon {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo_name {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name {
+  opacity: 1;
+}
+.sidebar .logo-details #btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details #btn {
+  text-align: right;
+}
+.sidebar i {
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidebar .nav-list {
+  margin-top: 20px;
+  height: 100%;
+}
+.sidebar li {
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidebar li .tooltip {
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar li:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebar.open li .tooltip {
+  display: none;
+}
+.sidebar input {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  background: #1d1b31;
+}
+.sidebar.open input {
+  padding: 0 20px 0 50px;
+  width: 100%;
+}
+.sidebar .bx-search {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  background: #1d1b31;
+  color: #fff;
+}
+.sidebar.open .bx-search:hover {
+  background: #1d1b31;
+  color: #fff;
+}
+.sidebar .bx-search:hover {
+  background: #fff;
+  color: #11101d;
+}
+.sidebar li a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #11101d;
+}
+.sidebar li a:hover {
+  background: #fff;
+}
+.sidebar li a .links_name {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar.open li a .links_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i {
+  transition: all 0.5s ease;
+  color: #11101d;
+}
+.sidebar li i {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+.sidebar li.profile {
+  position: fixed;
+  height: 60px;
+  width: 78px;
+  left: 0;
+  bottom: -8px;
+  padding: 10px 14px;
+  background: #1d1b31;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.sidebar.open li.profile {
+  width: 250px;
+}
+.sidebar li .profile-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.sidebar li img {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.sidebar li.profile .name,
+.sidebar li.profile .job {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+}
+.sidebar li.profile .job {
+  font-size: 12px;
+}
+.sidebar .profile #log_out {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #1d1b31;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+}
+.sidebar.open .profile #log_out {
+  width: 50px;
+  background: none;
+}
+.home-section {
+  position: relative;
+  background: #e4e9f7;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidebar.open ~ .home-section {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+.home-section .text {
+  display: inline-block;
+  color: #11101d;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px;
+}
+@media (max-width: 420px) {
+  .sidebar li .tooltip {
+    display: none;
+  }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height:10rem;
+    width:100%;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    color: #4CAF50;
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #4CAF50;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+}
